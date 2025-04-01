@@ -13,19 +13,25 @@ public class PlayerLooker : MonoBehaviour
     {
         _inputReader.Looked += LooK;
     }
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     private void OnDisable()
     {
         _inputReader.Looked -= LooK;
     }
 
-    private void LooK(float horizontal,float vertical)
+    private void LooK(float horizontal, float vertical)
     {
         _rotationX -= vertical * _lookSens * Time.deltaTime;
         float rotationYDelta = horizontal * _lookSens * Time.deltaTime;
-        
-        _rotationX = Mathf.Clamp(_rotationX,_minRotationX, _maxRotationX);
 
-        _camera.transform.localRotation = Quaternion.Euler(_rotationX,0,0);
+        _rotationX = Mathf.Clamp(_rotationX, _minRotationX, _maxRotationX);
+
+        _camera.transform.localRotation = Quaternion.Euler(_rotationX, 0, 0);
         transform.Rotate(Vector3.up * rotationYDelta);
     }
 }
