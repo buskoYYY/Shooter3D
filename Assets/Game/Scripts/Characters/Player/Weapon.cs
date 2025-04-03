@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -29,6 +27,10 @@ public class Weapon : MonoBehaviour
 
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
+                if (hit.collider.TryGetComponent(out EnemyHealth enemy))
+                {
+                    enemy.TakeDamage(_damage);
+                }
                 Instantiate(_test, hit.point, Quaternion.identity);
             }
 
