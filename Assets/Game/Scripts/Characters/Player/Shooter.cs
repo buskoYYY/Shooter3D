@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,9 @@ public class Shooter : MonoBehaviour
     [SerializeField] private List<Weapon> _weapons;
 
     private Weapon _currentWeapon;
+
+    public event Action Shot;
+    public event Action Reloaded;
 
     private void OnEnable()
     {
@@ -30,12 +34,16 @@ public class Shooter : MonoBehaviour
 
     private void Shoot()
     {
-        _currentWeapon.Shot(_camera);
+        if (_currentWeapon.TryShot(_camera))
+        {
+            Shot?.Invoke();
+        }
     }
 
     private void Reload()
     {
         _currentWeapon.Reload();
+        Reloaded?.Invoke();
     }
 
     private void SwitchWeapon(int weaponNumber)

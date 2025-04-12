@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -9,9 +10,12 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private LayerMask _groundLayer;
+
     private CharacterController _controller;
     private Vector3 _velocity;
     private bool _isJumping = false;
+
+    public event Action<Vector2> Moved;
 
     private void Awake()
     {
@@ -52,6 +56,7 @@ public class PlayerMover : MonoBehaviour
         Vector3 direction = transform.forward * vertical + transform.right * horizontal;
         direction.Normalize();
         _controller.Move(direction * _speed * Time.deltaTime);
+        Moved?.Invoke(new Vector2(horizontal,vertical));
     }
 
     private bool CheckGround()
