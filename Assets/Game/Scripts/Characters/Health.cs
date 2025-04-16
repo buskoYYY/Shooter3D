@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 
-public abstract class Health : MonoBehaviour
+public abstract class Health : Changeble
 {
     [SerializeField] private float _maxValue;
 
     private float _value;
 
-    public event Action<Health> Died;
+    public event Action Died;
+    public event Action TookDamage;
 
     public float Value
     {
@@ -25,6 +26,7 @@ public abstract class Health : MonoBehaviour
     private void Start()
     {
         _value = _maxValue;
+        OnValueChanged(Value, _maxValue);
     }
 
     public void TakeDamage(float amount)
@@ -35,6 +37,8 @@ public abstract class Health : MonoBehaviour
         }
 
         Value -= amount;
+        TookDamage?.Invoke();
+        OnValueChanged(Value, _maxValue);
 
         if (Value == 0)
         {
@@ -50,10 +54,11 @@ public abstract class Health : MonoBehaviour
         }
 
         Value += amount;
+        OnValueChanged(Value, _maxValue);
     }
 
     protected virtual void OnDeath()
     {
-        Died?.Invoke(this);
+        Died?.Invoke();
     }
 }

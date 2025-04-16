@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooter : MonoBehaviour
+public class Shooter : Changeble
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private InputReader _inputReader;
@@ -23,6 +23,7 @@ public class Shooter : MonoBehaviour
     private void Start()
     {
         SwitchWeapon(1);
+        OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
     }
 
     private void OnDisable()
@@ -37,6 +38,7 @@ public class Shooter : MonoBehaviour
         if (_currentWeapon.TryShot(_camera))
         {
             Shot?.Invoke();
+            OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
         }
     }
 
@@ -44,6 +46,7 @@ public class Shooter : MonoBehaviour
     {
         _currentWeapon.Reload();
         Reloaded?.Invoke();
+        OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
     }
 
     private void SwitchWeapon(int weaponNumber)
@@ -55,5 +58,6 @@ public class Shooter : MonoBehaviour
 
         _currentWeapon = _weapons[weaponNumber - 1];
         _currentWeapon.gameObject.SetActive(true);
+        OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
     }
 }
