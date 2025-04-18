@@ -53,10 +53,13 @@ public class PlayerMover : MonoBehaviour
 
     private void Move(float horizontal, float vertical)
     {
-        Vector3 direction = transform.forward * vertical + transform.right * horizontal;
-        direction.Normalize();
-        _controller.Move(direction * _speed * Time.deltaTime);
-        Moved?.Invoke(new Vector2(horizontal,vertical));
+        if(PauseMenu.Instance.IsPaused == false)
+        {
+            Vector3 direction = transform.forward * vertical + transform.right * horizontal;
+            direction.Normalize();
+            _controller.Move(direction * _speed * Time.deltaTime);
+            Moved?.Invoke(new Vector2(horizontal, vertical));
+        }
     }
 
     private bool CheckGround()
@@ -71,7 +74,10 @@ public class PlayerMover : MonoBehaviour
 
     private void Jump()
     {
-        _isJumping = true;
-        _velocity.y = _jumpForce;
+        if(PauseMenu.Instance.IsPaused == false)
+        {
+            _isJumping = true;
+            _velocity.y = _jumpForce;
+        }
     }
 }

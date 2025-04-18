@@ -35,29 +35,38 @@ public class Shooter : Changeble
 
     private void Shoot()
     {
-        if (_currentWeapon.TryShot(_camera))
+        if (PauseMenu.Instance.IsPaused == false)
         {
-            Shot?.Invoke();
-            OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+            if (_currentWeapon.TryShot(_camera))
+            {
+                Shot?.Invoke();
+                OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+            }
         }
     }
 
     private void Reload()
     {
-        _currentWeapon.Reload();
-        Reloaded?.Invoke();
-        OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+        if (PauseMenu.Instance.IsPaused == false)
+        {
+            _currentWeapon.Reload();
+            Reloaded?.Invoke();
+            OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+        }
     }
 
     private void SwitchWeapon(int weaponNumber)
     {
-        if (_currentWeapon != null)
+        if(PauseMenu.Instance.IsPaused == false)
         {
-            _currentWeapon.gameObject.SetActive(false);
-        }
+            if (_currentWeapon != null)
+            {
+                _currentWeapon.gameObject.SetActive(false);
+            }
 
-        _currentWeapon = _weapons[weaponNumber - 1];
-        _currentWeapon.gameObject.SetActive(true);
-        OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+            _currentWeapon = _weapons[weaponNumber - 1];
+            _currentWeapon.gameObject.SetActive(true);
+            OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+        }
     }
 }

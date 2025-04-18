@@ -26,12 +26,15 @@ public class PlayerLooker : MonoBehaviour
 
     private void LooK(float horizontal, float vertical)
     {
-        _rotationX -= vertical * _lookSens * Time.deltaTime;
-        float rotationYDelta = horizontal * _lookSens * Time.deltaTime;
+        if(PauseMenu.Instance.IsPaused == false)
+        {
+            _rotationX -= vertical * _lookSens * Time.deltaTime;
+            float rotationYDelta = horizontal * _lookSens * Time.deltaTime;
 
-        _rotationX = Mathf.Clamp(_rotationX, _minRotationX, _maxRotationX);
+            _rotationX = Mathf.Clamp(_rotationX, _minRotationX, _maxRotationX);
 
-        _camera.transform.localRotation = Quaternion.Euler(_rotationX, 0, 0);
-        transform.Rotate(Vector3.up * rotationYDelta);
+            _camera.transform.localRotation = Quaternion.Euler(_rotationX, 0, 0);
+            transform.Rotate(Vector3.up * rotationYDelta);
+        }
     }
 }
