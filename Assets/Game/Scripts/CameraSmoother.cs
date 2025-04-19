@@ -14,12 +14,12 @@ public class CameraSmoother : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(PauseMenu.Instance.IsPaused == false)
-        {
-            transform.rotation = Quaternion.Lerp(_lastRotation, transform.rotation, _smoothValue);
-            transform.rotation = Quaternion.Euler(transform.eulerAngles + _offset);
+        if (TimeManager.IsPaused)
+            return;
 
-            _lastRotation = transform.rotation;
-        }
+        transform.rotation = Quaternion.Lerp(_lastRotation, transform.rotation, _smoothValue);
+        transform.rotation = Quaternion.Euler(transform.eulerAngles + _offset);
+
+        _lastRotation = transform.rotation;
     }
 }

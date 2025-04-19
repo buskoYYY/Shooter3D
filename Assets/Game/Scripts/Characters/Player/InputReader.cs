@@ -26,6 +26,9 @@ public class InputReader : MonoBehaviour
 
     private void Update()
     {
+        if (TimeManager.IsPaused)
+            return;
+
         float horizontal = Input.GetAxisRaw(Horizontal);
         float vertical = Input.GetAxisRaw(Vertical);
         Moved?.Invoke(horizontal, vertical);

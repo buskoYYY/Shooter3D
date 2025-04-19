@@ -11,7 +11,7 @@ public class PlayerLooker : MonoBehaviour
 
     private void OnEnable()
     {
-        _inputReader.Looked += LooK;
+        _inputReader.Looked += Look;
     }
 
     private void Start()
@@ -21,13 +21,11 @@ public class PlayerLooker : MonoBehaviour
 
     private void OnDisable()
     {
-        _inputReader.Looked -= LooK;
+        _inputReader.Looked -= Look;
     }
 
-    private void LooK(float horizontal, float vertical)
+    private void Look(float horizontal, float vertical)
     {
-        if(PauseMenu.Instance.IsPaused == false)
-        {
             _rotationX -= vertical * _lookSens * Time.deltaTime;
             float rotationYDelta = horizontal * _lookSens * Time.deltaTime;
 
@@ -35,6 +33,5 @@ public class PlayerLooker : MonoBehaviour
 
             _camera.transform.localRotation = Quaternion.Euler(_rotationX, 0, 0);
             transform.Rotate(Vector3.up * rotationYDelta);
-        }
     }
 }

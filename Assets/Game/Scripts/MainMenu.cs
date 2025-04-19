@@ -10,5 +10,6 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         SceneSystem.LoadScene(SceneName.Game);
+        TimeManager.Run();
     }
 }

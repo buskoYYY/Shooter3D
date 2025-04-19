@@ -10,7 +10,6 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float _damage;
     [SerializeField] private int _maxMagazineCapacity;
     [SerializeField] private int _maxBulletsInInventory;
-    [SerializeField] private GameObject _test;
 
     private int _bulletsInMagazine = 0;
     private int _bulletsInInventory = 0;
@@ -39,8 +38,7 @@ public class Weapon : MonoBehaviour
                     enemy.TakeDamage(_damage);
                     ParticleSystem effect = Instantiate(_hitEffect, hit.point,Quaternion.identity);
                     effect.transform.forward = hit.normal;
-                }
-                Instantiate(_test, hit.point, Quaternion.identity);              
+                }            
             }
 
             _bulletsInMagazine--;

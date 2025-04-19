@@ -2,12 +2,8 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static PauseMenu Instance { get; private set; }
-
     private readonly float _alphaWhenOff = 0f;
     private readonly float _alphaWhenOn = 1f;
-    private readonly float _timeWhenOn = 0f;
-    private readonly float _timeWhenOff = 1f;
 
     [SerializeField] private CanvasGroup _canvasGroup;
     [SerializeField] private InputReader _inputReader;
@@ -15,16 +11,6 @@ public class PauseMenu : MonoBehaviour
     private bool _isPaused = false;
 
     public bool IsPaused => _isPaused;
-
-    private void Awake()
-    {
-        if (Instance != null)
-        {
-            Destroy(Instance);
-        }
-
-        Instance = this;
-    }
 
     private void OnEnable()
     {
@@ -37,7 +23,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void UnPause()
     {
-        Time.timeScale = _timeWhenOff;
+        TimeManager.Run();
         _canvasGroup.alpha = _alphaWhenOff;
         _canvasGroup.blocksRaycasts = false;
         _canvasGroup.interactable = false;
@@ -53,7 +39,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Pause()
     {
-        Time.timeScale = _timeWhenOn;
+        TimeManager.Pause();
         _canvasGroup.alpha = _alphaWhenOn;
         _canvasGroup.blocksRaycasts = true;
         _canvasGroup.interactable = true;

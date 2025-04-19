@@ -1,5 +1,3 @@
-
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public static class SceneSystem
@@ -7,6 +5,11 @@ public static class SceneSystem
     public static void LoadScene(SceneName sceneName)
     {
         SceneManager.LoadScene(sceneName.ToString());
+    }
+
+    public static void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
