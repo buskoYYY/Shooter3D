@@ -16,5 +16,5 @@ public static class SceneSystem
 public enum SceneName
 {
     MainMenu = 0,
-    Game = 1
+    Level1 = 1
 }

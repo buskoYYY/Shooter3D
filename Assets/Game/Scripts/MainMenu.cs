@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneSystem.LoadScene(SceneName.Game);
+        SceneSystem.LoadScene(SceneName.Level1);
         TimeManager.Run();
     }
 }

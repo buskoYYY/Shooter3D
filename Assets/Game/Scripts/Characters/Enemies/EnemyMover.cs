@@ -46,8 +46,6 @@ public class EnemyMover : MonoBehaviour
         {
             PickNewPatrolPoint();
         }
-
-        Debug.Log(_agent.isStopped);
     }
 
     private void OnDisable()
