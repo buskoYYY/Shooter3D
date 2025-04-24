@@ -18,6 +18,12 @@ public class EnemyMover : MonoBehaviour
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
+
+        if(_agent != null )
+        {
+            //_agent.speed = LevelSettingsInstaller.Instance.enemySpeed;
+        }
+         
     }
 
     private void OnEnable()
@@ -31,6 +37,7 @@ public class EnemyMover : MonoBehaviour
     private void Start()
     {
         PickNewPatrolPoint();
+        
     }
 
     private void Update()

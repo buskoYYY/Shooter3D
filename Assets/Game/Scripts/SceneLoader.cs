@@ -1,12 +1,7 @@
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
-    private void Start()
-    {
-        Time.timeScale = 1; 
-    }
-
     public void Play()
     {
         SceneSystem.LoadScene(SceneName.Level1);

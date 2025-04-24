@@ -16,6 +16,13 @@ public class EnemyHealth : Health
         Spawned?.Invoke();
     }
 
+/*    protected override void Start()
+    {
+*//*        _maxValue = LevelSettingsInstaller.Instance.enemyHealth;
+        _value = _maxValue;
+        OnValueChanged(Value, _maxValue);*//*
+    }*/
+
     protected override void OnDeath()
     {
         base.OnDeath();

@@ -5,7 +5,7 @@ public abstract class Health : Changeble
 {
     [SerializeField] private float _maxValue;
 
-    private float _value;
+    public float _value;
 
     public event Action Died;
     public event Action TookDamage;
@@ -20,7 +20,6 @@ public abstract class Health : Changeble
         {
             return _value;
         }
-
     }
 
     private void Start()
