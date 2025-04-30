@@ -8,20 +8,29 @@ using UnityEngine.AI;
 public class EnemyHealth : Health
 {
     [SerializeField] private float _destroyDelay;
+    [SerializeField] private SaveData _saveData;
+
+    private int _health;
 
     public event Action Spawned;
 
+    private void Awake()
+    {
+        if (_saveData != null)
+        {
+            _health = _saveData.GetEnemyHealth();
+        }
+    }
     private void OnEnable()
     {
         Spawned?.Invoke();
     }
 
-/*    protected override void Start()
+    protected override void Start()
     {
-*//*        _maxValue = LevelSettingsInstaller.Instance.enemyHealth;
-        _value = _maxValue;
-        OnValueChanged(Value, _maxValue);*//*
-    }*/
+        _maxValue = _health;
+        base.Start();
+    }
 
     protected override void OnDeath()
     {

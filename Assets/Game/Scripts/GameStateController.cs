@@ -3,8 +3,6 @@ using UnityEngine;
 public class GameStateController : MonoBehaviour
 {
     private readonly float _alphaWhenOn = 1f;
-    private readonly float _timeWhenOn = 0f;
-    private readonly float _timeWhenOff = 1f;
 
     [SerializeField] private PlayerHealth _player;
     [SerializeField] private CanvasGroup _looseScreen;

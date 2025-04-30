@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,11 +8,15 @@ public class Shooter : Changeble
     [SerializeField] private Camera _camera;
     [SerializeField] private InputReader _inputReader;
     [SerializeField] private List<Weapon> _weapons;
+    [SerializeField] private float _timeToReloading;
 
     private Weapon _currentWeapon;
+    private bool _canShoot = true;
 
     public event Action Shot;
     public event Action Reloaded;
+
+    public bool CanShoot => _canShoot;
 
     private void OnEnable()
     {
@@ -35,19 +40,20 @@ public class Shooter : Changeble
 
     private void Shoot()
     {
-        if (_currentWeapon.TryShot(_camera))
+        if (_currentWeapon.TryShot(_camera) && _canShoot == false)
         {
             Shot?.Invoke();
             OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
-
         }
     }
 
     private void Reload()
     {
+        _canShoot = false;
         _currentWeapon.Reload();
         Reloaded?.Invoke();
         OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+        StartCoroutine(ReloadDelay());
     }
 
     private void SwitchWeapon(int weaponNumber)
@@ -60,5 +66,11 @@ public class Shooter : Changeble
         _currentWeapon = _weapons[weaponNumber - 1];
         _currentWeapon.gameObject.SetActive(true);
         OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+    }
+
+    private IEnumerator ReloadDelay()
+    {
+        yield return new WaitForSeconds(_timeToReloading);
+        _canShoot = true;
     }
 }

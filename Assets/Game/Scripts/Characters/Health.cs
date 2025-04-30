@@ -3,9 +3,9 @@ using UnityEngine;
 
 public abstract class Health : Changeble
 {
-    [SerializeField] private float _maxValue;
+    protected  float _maxValue;
 
-    public float _value;
+    private float _value;
 
     public event Action Died;
     public event Action TookDamage;
@@ -22,7 +22,7 @@ public abstract class Health : Changeble
         }
     }
 
-    private void Start()
+    protected virtual void Start()
     {
         _value = _maxValue;
         OnValueChanged(Value, _maxValue);

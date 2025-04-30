@@ -10,6 +10,8 @@ public class EnemyTracker : MonoBehaviour
 
     public event Action AllEnemiesDied;
 
+    public int EnemyCount => _enemyCount;
+
     private void OnEnable()
     {
         foreach(EnemyHealth enemy in _enemies)

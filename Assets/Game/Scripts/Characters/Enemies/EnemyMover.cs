@@ -10,6 +10,7 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] private EnemyHealth _health;
     [SerializeField] private EnemyAttacker _attacker;
     [SerializeField] private EnemyAnimationEventHandler _animationEvent;
+    [SerializeField] private SaveData _saveData;
     [SerializeField] private float _playerNoticeDistance;
     [SerializeField] private float _viewAngle;
 
@@ -17,13 +18,7 @@ public class EnemyMover : MonoBehaviour
 
     private void Awake()
     {
-        _agent = GetComponent<NavMeshAgent>();
-
-        if(_agent != null )
-        {
-            //_agent.speed = LevelSettingsInstaller.Instance.enemySpeed;
-        }
-         
+        _agent = GetComponent<NavMeshAgent>();        
     }
 
     private void OnEnable()
@@ -37,7 +32,11 @@ public class EnemyMover : MonoBehaviour
     private void Start()
     {
         PickNewPatrolPoint();
-        
+
+        if (_agent != null)
+        {
+            _agent.speed = _saveData.GetEnemySpeed();
+        }
     }
 
     private void Update()

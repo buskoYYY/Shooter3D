@@ -493,7 +493,7 @@ RectTransform:
   m_Father: {fileID: 7858922070499085650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0.000000059604645, y: -0.0023000017}
   m_SizeDelta: {x: 0, y: 0.083}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -594,7 +594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6565368191572643950
 Transform:
   m_ObjectHideFlags: 0
@@ -654,6 +654,7 @@ MonoBehaviour:
   _health: {fileID: 1428430863522912813}
   _attacker: {fileID: 1090387447484349596}
   _animationEvent: {fileID: 34155886106427577}
+  _saveData: {fileID: 0}
   _playerNoticeDistance: 12
   _viewAngle: 90
 --- !u!136 &6800153539458407807
@@ -707,7 +708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebfa848c35d3c7248aed51bd168f79b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxValue: 100
   _destroyDelay: 3
 --- !u!114 &6877086190436936602
 MonoBehaviour:
@@ -741,12 +741,12 @@ MonoBehaviour:
   _ambientPlayDelay: 8
   _source: {fileID: 5668601182889912522}
   _ambientSound:
-  - {fileID: 8300000, guid: 48aa8a0fadbb1ed44ab5ad8a8e1ce621, type: 3}
-  - {fileID: 8300000, guid: 4f2741921801b7c43a0173acfd44fe03, type: 3}
-  - {fileID: 8300000, guid: 7281af5294080e645ae1c9a8e04a1125, type: 3}
-  - {fileID: 8300000, guid: 7d839b3947d1942409ae7b7b99e4728c, type: 3}
-  _attackSound: {fileID: 8300000, guid: 7bd8ecf7225809543a600a77a85e4516, type: 3}
-  _hitSound: {fileID: 8300000, guid: 3de929be3a4bcac45b81298d02bb94ec, type: 3}
+  - {fileID: 8300000, guid: bf127c8615ac69b428c5a6ad33813238, type: 3}
+  - {fileID: 8300000, guid: 58ddb1d526f0b914da43616c05363343, type: 3}
+  - {fileID: 8300000, guid: 3bab00d777bec8649ba51ed8322548ce, type: 3}
+  - {fileID: 8300000, guid: d0ff03f3437a96a48b0d37418020a604, type: 3}
+  _attackSound: {fileID: 8300000, guid: 3c30449b171bd414f90a181d225a5d1e, type: 3}
+  _hitSound: {fileID: 8300000, guid: 20f7c8103d9dfce40927ec40890d380e, type: 3}
   _attacker: {fileID: 1090387447484349596}
   _health: {fileID: 1428430863522912813}
 --- !u!82 &5668601182889912522

@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4049753597466750695
 Transform:
   m_ObjectHideFlags: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   _health: {fileID: 524220293282073214}
   _attacker: {fileID: 3347904440269148929}
   _animationEvent: {fileID: 5098649197388700717}
+  _saveData: {fileID: 0}
   _playerNoticeDistance: 12
   _viewAngle: 90
 --- !u!136 &7803172703894982722
@@ -251,7 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebfa848c35d3c7248aed51bd168f79b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxValue: 100
   _destroyDelay: 3
 --- !u!114 &5972532245563447592
 MonoBehaviour:
@@ -286,11 +286,11 @@ MonoBehaviour:
   _source: {fileID: 5525785599027212637}
   _ambientSound:
   - {fileID: 8300000, guid: 48aa8a0fadbb1ed44ab5ad8a8e1ce621, type: 3}
-  - {fileID: 8300000, guid: 4f2741921801b7c43a0173acfd44fe03, type: 3}
+  - {fileID: 8300000, guid: d603b0e5ebd9bf3419ca082f3bdac4ef, type: 3}
   - {fileID: 8300000, guid: 7281af5294080e645ae1c9a8e04a1125, type: 3}
-  - {fileID: 8300000, guid: 7d839b3947d1942409ae7b7b99e4728c, type: 3}
-  _attackSound: {fileID: 8300000, guid: 7bd8ecf7225809543a600a77a85e4516, type: 3}
-  _hitSound: {fileID: 8300000, guid: 3de929be3a4bcac45b81298d02bb94ec, type: 3}
+  - {fileID: 8300000, guid: 4052ef06f9e9eb449b83c44735b916df, type: 3}
+  _attackSound: {fileID: 8300000, guid: d648ad6ecf248ee4bb163347efcbe124, type: 3}
+  _hitSound: {fileID: 8300000, guid: a38152c9c47f06a48a46e628b13165e5, type: 3}
   _attacker: {fileID: 3347904440269148929}
   _health: {fileID: 524220293282073214}
 --- !u!82 &5525785599027212637
@@ -549,7 +549,7 @@ RectTransform:
   m_Father: {fileID: 4179539507968217254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0.000000059604645, y: -0.0023000017}
   m_SizeDelta: {x: 0, y: 0.083}
   m_Pivot: {x: 0.5, y: 0.5}

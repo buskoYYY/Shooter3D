@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a5ce748aad7374f84ebb8595b18d6c, type: 3}
   m_Name: Medium
   m_EditorClassIdentifier: 
-  _playerHealth: 0
-  _enemyHealth: 100
+  _enemyHealth: 50
   _enemySpeed: 4.5
