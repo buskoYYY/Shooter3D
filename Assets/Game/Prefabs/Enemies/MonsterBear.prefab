@@ -314,7 +314,7 @@ RectTransform:
   m_Father: {fileID: 3894587273980313017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0.000000059604645, y: -0.0023000017}
   m_SizeDelta: {x: 0, y: 0.083}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -379,7 +379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &848333919017585975
 Transform:
   m_ObjectHideFlags: 0
@@ -441,7 +441,7 @@ MonoBehaviour:
   _animationEvent: {fileID: 2008589323504040055}
   _saveData: {fileID: 0}
   _playerNoticeDistance: 12
-  _viewAngle: 90
+  _viewAngle: 150
 --- !u!136 &895575302788252282
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -449,7 +449,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4468970343715919614}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a6a40478b8284864190ca481bb727b17, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0809d7f8b124778478aad551de5c0be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
+  _damage: 1
   _attackDistance: 2.5
   _player: {fileID: 0}
   _animationEvent: {fileID: 2008589323504040055}
@@ -494,6 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destroyDelay: 3
+  _saveData: {fileID: 0}
 --- !u!114 &2959906852577991024
 MonoBehaviour:
   m_ObjectHideFlags: 0

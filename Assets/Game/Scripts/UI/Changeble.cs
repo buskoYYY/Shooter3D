@@ -8,5 +8,6 @@ public abstract class Changeble : MonoBehaviour
     protected void OnValueChanged(float currentValue, float maxValue)
     {
         ValueChanged?.Invoke(currentValue, maxValue);
+        Debug.Log("Value changed");
     }
 }

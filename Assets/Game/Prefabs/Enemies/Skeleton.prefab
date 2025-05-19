@@ -656,7 +656,7 @@ MonoBehaviour:
   _animationEvent: {fileID: 34155886106427577}
   _saveData: {fileID: 0}
   _playerNoticeDistance: 12
-  _viewAngle: 90
+  _viewAngle: 150
 --- !u!136 &6800153539458407807
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -664,7 +664,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8727735684588167747}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a6a40478b8284864190ca481bb727b17, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -709,6 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destroyDelay: 3
+  _saveData: {fileID: 0}
 --- !u!114 &6877086190436936602
 MonoBehaviour:
   m_ObjectHideFlags: 0

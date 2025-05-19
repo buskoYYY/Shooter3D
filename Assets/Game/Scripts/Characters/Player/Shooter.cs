@@ -40,10 +40,11 @@ public class Shooter : Changeble
 
     private void Shoot()
     {
+        OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
+
         if (_currentWeapon.TryShot(_camera) && _canShoot == false)
         {
             Shot?.Invoke();
-            OnValueChanged(_currentWeapon.BulletsInMagazine, _currentWeapon.MaxMagazineCapacity);
         }
     }
 
