@@ -400,9 +400,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2959385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u0412\u042B \u0412\u042B\u0419\u0413\u0420\u0410\u041B\u0418!"
 --- !u!1 &7627482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,9 +1129,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 226151919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u041F\u0415\u0420\u0415\u0419\u0422\u0418 \u0412 \u041C\u0415\u041D\u042E"
 --- !u!1 &234054462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,9 +1754,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 509158811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u041F\u0410\u0423\u0417\u0410"
 --- !u!1 &589472012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,9 +2675,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 857274952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u041F\u0420\u041E\u0414\u041E\u041B\u0416\u0418\u0422\u042C"
 --- !u!1 &862405711
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,9 +3367,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185255699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u0420\u0415\u0421\u0422\u0410\u0420\u0422"
 --- !u!1 &1216953830
 GameObject:
   m_ObjectHideFlags: 0
@@ -3946,9 +3951,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1504105483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u0420\u0415\u0421\u0422\u0410\u0420\u0422"
 --- !u!1001 &1533206658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4486,9 +4492,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1734468730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u041F\u0415\u0420\u0415\u0419\u0422\u0418 \u0412 \u041C\u0415\u041D\u042E"
 --- !u!1 &1753699143
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,9 +5282,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1918838847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u0412\u042B \u041F\u0420\u041E\u0418\u0413\u0420\u0410\u041B\u0418!"
 --- !u!1 &1974442791
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,9 +5430,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1974442791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLang: "\u041F\u0415\u0420\u0415\u0419\u0422\u0418 \u0412 \u041C\u0415\u041D\u042E"
 --- !u!1 &1987414416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,6 +5785,7 @@ GameObject:
   - component: {fileID: 2141307337}
   - component: {fileID: 2141307336}
   - component: {fileID: 2141307338}
+  - component: {fileID: 2141307339}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5822,7 +5832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Audio
+  m_text: "\u0417\u0412\u0423\u041A"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c2b19b45708e1c4b9b50c40b9b84b28, type: 2}
   m_sharedMaterial: {fileID: 3741518381083319762, guid: 3c2b19b45708e1c4b9b50c40b9b84b28, type: 2}
@@ -5911,6 +5921,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2141307339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141307334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f49195bae16ac541834451b5bfd8e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyLang: "\u0417\u0412\u0423\u041A"
 --- !u!1001 &6839184245648433546
 PrefabInstance:
   m_ObjectHideFlags: 0
