@@ -13,6 +13,7 @@ public class Bootstrap : MonoBehaviour
         }
 
         Localization.InitTranslations();
+        YandexGame.savesData.LoadPlayerPrefs();
         SceneManager.LoadScene(1);
     }
 }
