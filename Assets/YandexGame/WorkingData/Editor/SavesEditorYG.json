@@ -1,8 +1,8 @@
 {
-    "idSave": 30,
+    "idSave": 114,
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
-    "Health": 50,
-    "Speed": 4.5
+    "Health": 15,
+    "Speed": 3.5
 }

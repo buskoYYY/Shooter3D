@@ -9,6 +9,7 @@ public class EnemyTracker : MonoBehaviour
     private int _enemyCount = 0;
 
     public event Action AllEnemiesDied;
+    public event Action EnemyDied;
 
     public int EnemyCount => _enemyCount;
 
@@ -46,6 +47,7 @@ public class EnemyTracker : MonoBehaviour
     private void OnEnemyDieD()
     {
         _enemyCount--;
+        EnemyDied?.Invoke();
 
         if(_enemyCount == 0)
         {

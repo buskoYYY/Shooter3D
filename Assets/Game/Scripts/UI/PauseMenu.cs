@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    private readonly float _alphaWhenOff = 0f;
-    private readonly float _alphaWhenOn = 1f;
-
     [SerializeField] private CanvasGroup _canvasGroup;
     [SerializeField] private InputReader _inputReader;
+    [SerializeField] private TweenAniamation _tweenAniamation;
 
     private bool _isPaused = false;
 
@@ -24,7 +22,7 @@ public class PauseMenu : MonoBehaviour
     public void UnPause()
     {
         TimeManager.Run();
-        _canvasGroup.alpha = _alphaWhenOff;
+        _tweenAniamation.Hide(_canvasGroup);
         _canvasGroup.blocksRaycasts = false;
         _canvasGroup.interactable = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -41,7 +39,7 @@ public class PauseMenu : MonoBehaviour
     private void Pause()
     {
         TimeManager.Pause();
-        _canvasGroup.alpha = _alphaWhenOn;
+        _tweenAniamation.Show(_canvasGroup);
         _canvasGroup.blocksRaycasts = true;
         _canvasGroup.interactable = true;
         Cursor.lockState = CursorLockMode.None;

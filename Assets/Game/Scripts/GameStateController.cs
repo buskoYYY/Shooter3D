@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class GameStateController : MonoBehaviour
 {
-    private readonly float _alphaWhenOn = 1f;
-
     [SerializeField] private PlayerHealth _player;
     [SerializeField] private CanvasGroup _looseScreen;
     [SerializeField] private CanvasGroup _winScreen;
     [SerializeField] private EnemyTracker _enemyTracker;
+    [SerializeField] private TweenAniamation _tweenAniamation;
 
     private void OnEnable()
     {
@@ -31,9 +30,7 @@ public class GameStateController : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        _looseScreen.alpha = _alphaWhenOn;
-        _looseScreen.interactable = true;
-        _looseScreen.blocksRaycasts = true;
+        _tweenAniamation.Show(_looseScreen);
         TimeManager.Pause();
     }
 
@@ -41,9 +38,7 @@ public class GameStateController : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        _winScreen.alpha = _alphaWhenOn;
-        _winScreen.interactable = true;
-        _winScreen.blocksRaycasts = true;
+        _tweenAniamation.Show(_winScreen);
         TimeManager.Pause();
     }
 }
