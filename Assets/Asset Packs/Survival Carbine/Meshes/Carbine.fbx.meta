@@ -1,52 +1,134 @@
 fileFormatVersion: 2
 guid: b5d3572f7b6bfd143b39ce51cf6bde2e
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Bolt
-    100002: //RootNode
-    100004: Magazine
-    100006: Rounds
-    100008: Shell
-    100010: Sights
-    100012: Suppressor
-    100014: Trigger
-    400000: Bolt
-    400002: //RootNode
-    400004: Magazine
-    400006: Rounds
-    400008: Shell
-    400010: Sights
-    400012: Suppressor
-    400014: Trigger
-    2100000: Material
-    2300000: Bolt
-    2300002: //RootNode
-    2300004: Magazine
-    2300006: Rounds
-    2300008: Shell
-    2300010: Sights
-    2300012: Suppressor
-    2300014: Trigger
-    3300000: Bolt
-    3300002: //RootNode
-    3300004: Magazine
-    3300006: Rounds
-    3300008: Shell
-    3300010: Sights
-    3300012: Suppressor
-    3300014: Trigger
-    4300000: Carbine
-    4300002: Trigger
-    4300004: Magazine
-    4300006: Rounds
-    4300008: Shell
-    4300010: Suppressor
-    4300012: Sights
-    4300014: Bolt
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bolt
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: Magazine
+  - first:
+      1: 100006
+    second: Rounds
+  - first:
+      1: 100008
+    second: Shell
+  - first:
+      1: 100010
+    second: Sights
+  - first:
+      1: 100012
+    second: Suppressor
+  - first:
+      1: 100014
+    second: Trigger
+  - first:
+      4: 400000
+    second: Bolt
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Magazine
+  - first:
+      4: 400006
+    second: Rounds
+  - first:
+      4: 400008
+    second: Shell
+  - first:
+      4: 400010
+    second: Sights
+  - first:
+      4: 400012
+    second: Suppressor
+  - first:
+      4: 400014
+    second: Trigger
+  - first:
+      21: 2100000
+    second: Material
+  - first:
+      23: 2300000
+    second: Bolt
+  - first:
+      23: 2300002
+    second: //RootNode
+  - first:
+      23: 2300004
+    second: Magazine
+  - first:
+      23: 2300006
+    second: Rounds
+  - first:
+      23: 2300008
+    second: Shell
+  - first:
+      23: 2300010
+    second: Sights
+  - first:
+      23: 2300012
+    second: Suppressor
+  - first:
+      23: 2300014
+    second: Trigger
+  - first:
+      33: 3300000
+    second: Bolt
+  - first:
+      33: 3300002
+    second: //RootNode
+  - first:
+      33: 3300004
+    second: Magazine
+  - first:
+      33: 3300006
+    second: Rounds
+  - first:
+      33: 3300008
+    second: Shell
+  - first:
+      33: 3300010
+    second: Sights
+  - first:
+      33: 3300012
+    second: Suppressor
+  - first:
+      33: 3300014
+    second: Trigger
+  - first:
+      43: 4300000
+    second: Carbine
+  - first:
+      43: 4300002
+    second: Trigger
+  - first:
+      43: 4300004
+    second: Magazine
+  - first:
+      43: 4300006
+    second: Rounds
+  - first:
+      43: 4300008
+    second: Shell
+  - first:
+      43: 4300010
+    second: Suppressor
+  - first:
+      43: 4300012
+    second: Sights
+  - first:
+      43: 4300014
+    second: Bolt
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -55,6 +137,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -76,28 +159,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -106,10 +200,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -119,13 +213,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -434,7 +434,6 @@ MonoBehaviour:
   _points:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   _player: {fileID: 0}
   _health: {fileID: 362188694026706746}
   _attacker: {fileID: 7845429500711874189}
