@@ -223,7 +223,7 @@ RectTransform:
   m_Father: {fileID: 7133873723955873216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0.000000059604645, y: -0.0023000017}
   m_SizeDelta: {x: 0, y: 0.083}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -413,7 +413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5438912267389653668
 Transform:
   m_ObjectHideFlags: 0
@@ -424,7 +424,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.47, y: 0.192, z: 2.66}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.23, y: 0.23, z: 0.23}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3128687311904568292}
@@ -445,7 +445,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 360
-  m_StoppingDistance: 2.3
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -468,13 +468,12 @@ MonoBehaviour:
   _points:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   _player: {fileID: 0}
   _health: {fileID: 9146476975274452369}
   _attacker: {fileID: 2856071491361212331}
   _animationEvent: {fileID: 1825900544529982288}
   _saveData: {fileID: 0}
-  _playerNoticeDistance: 12
+  _playerNoticeDistance: 9
   _viewAngle: 150
 --- !u!136 &8540479403320616555
 CapsuleCollider:
@@ -511,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0809d7f8b124778478aad551de5c0be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
+  _damage: 1
   _attackDistance: 2.5
   _player: {fileID: 0}
   _animationEvent: {fileID: 1825900544529982288}
