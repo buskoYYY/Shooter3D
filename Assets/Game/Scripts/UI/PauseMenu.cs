@@ -21,11 +21,8 @@ public class PauseMenu : MonoBehaviour
     }
     public void UnPause()
     {
-        Debug.Log("Unpause");
         TimeManager.Run();
         _tweenAniamation.Hide(_canvasGroup);
-/*        _canvasGroup.blocksRaycasts = false;
-        _canvasGroup.interactable = false;*/
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         _isPaused = false;
@@ -41,8 +38,8 @@ public class PauseMenu : MonoBehaviour
     {
         TimeManager.Pause();
         _tweenAniamation.Show(_canvasGroup);
-/*        _canvasGroup.blocksRaycasts = true;
-        _canvasGroup.interactable = true;*/
+        _canvasGroup.interactable = true;
+        _canvasGroup.blocksRaycasts = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         _isPaused = true;
@@ -60,3 +57,4 @@ public class PauseMenu : MonoBehaviour
         }
     }
 }
+

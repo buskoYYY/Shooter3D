@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3526628880354479366}
   - component: {fileID: 5280221872575345852}
+  - component: {fileID: 3999260548403212661}
   m_Layer: 0
   m_Name: monster_bear01_body
   m_TagString: Untagged
@@ -119,6 +120,18 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.041089114, y: -0.0055377223, z: 0.00002605468}
     m_Extent: {x: 0.12938005, y: 0.07858771, z: 0.15026784}
   m_DirtyAABB: 0
+--- !u!114 &3999260548403212661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71424024072261000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb163461470ec47a02632b8bc8ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &80603792798876406
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2014031626479791297}
   - component: {fileID: 8717075630318093526}
+  - component: {fileID: 7050140086626629084}
   m_Layer: 0
   m_Name: monster_bear01_head
   m_TagString: Untagged
@@ -243,6 +257,18 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.034874022, y: 0.048042454, z: 0.000025436282}
     m_Extent: {x: 0.044286877, y: 0.03467331, z: 0.038457185}
   m_DirtyAABB: 0
+--- !u!114 &7050140086626629084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144830890322392598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb163461470ec47a02632b8bc8ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &534809271276561857
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,19 +26,29 @@ public class GameStateController : MonoBehaviour
         TimeManager.Run();
     }
 
+    public void ExitToMenu()
+    {
+        SceneSystem.LoadScene(SceneName.MainMenu);
+        TimeManager.Run();
+    }
+
     private void Lose()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        _tweenAniamation.Show(_looseScreen);
-        TimeManager.Pause();
+        StartProcess(_looseScreen);
     }
 
     private void Win()
     {
+        StartProcess(_winScreen);
+    }
+
+    private void StartProcess(CanvasGroup canvasGroup)
+    {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        _tweenAniamation.Show(_winScreen);
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
+        _tweenAniamation.Show(canvasGroup);
         TimeManager.Pause();
     }
 }

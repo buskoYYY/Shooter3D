@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Natures_Big Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.76
@@ -1127,6 +1131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_House_03_color03
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2dbee28eacba7dd42845e0153c4da642, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2dbee28eacba7dd42845e0153c4da642, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6000001
@@ -1293,6 +1301,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 65abb0f1b521f834bae80ea4c9d93734, type: 3}
       propertyPath: m_Name
       value: Building_Bakery
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 65abb0f1b521f834bae80ea4c9d93734, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65abb0f1b521f834bae80ea4c9d93734, type: 3}
       propertyPath: m_LocalScale.x
@@ -2483,6 +2495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Natures_Bush_01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 31bbda51eeab02f44a8e92a7da2f5ff8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 31bbda51eeab02f44a8e92a7da2f5ff8, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -2779,6 +2795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Natures_Big Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b82e76f4092b7d24aaeecddf36fe8d3b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9
@@ -2933,7 +2953,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &1024040339
 MeshCollider:
@@ -4177,7 +4197,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1293148979
 Transform:
@@ -4570,6 +4590,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_Name
       value: Building_Clothing
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c7bcaa85c9494849bc7a0a18b7f3324, type: 3}
       propertyPath: m_LocalScale.x
@@ -5144,6 +5168,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 62125825e49febf4a89f76daf85d9ca7, type: 3}
       propertyPath: m_Name
       value: Bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 62125825e49febf4a89f76daf85d9ca7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62125825e49febf4a89f76daf85d9ca7, type: 3}
       propertyPath: m_LocalScale.x
@@ -13400,6 +13428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837443493504328639}
   - component: {fileID: 4730112408841475548}
+  - component: {fileID: 4730112408841475549}
   m_Layer: 0
   m_Name: monster_bear01_body
   m_TagString: Untagged
@@ -18778,6 +18807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3845263112303151362}
   - component: {fileID: 3845263112297584658}
+  - component: {fileID: 3845263112303151363}
   m_Layer: 0
   m_Name: GruntMesh
   m_TagString: Untagged
@@ -18945,6 +18975,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3845263112303151360}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3845263112303151363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3845263112302859618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb163461470ec47a02632b8bc8ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3845263112303151376
 Transform:
   m_ObjectHideFlags: 0
@@ -19711,6 +19753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3890502329232059963}
   - component: {fileID: 3890502329226755925}
+  - component: {fileID: 3890502329232059964}
   m_Layer: 0
   m_Name: Object02
   m_TagString: Untagged
@@ -19728,6 +19771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3890502329232059965}
   - component: {fileID: 3890502329226755927}
+  - component: {fileID: 3890502329232059966}
   m_Layer: 0
   m_Name: Object01
   m_TagString: Untagged
@@ -20361,6 +20405,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3890502329232059961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3890502329232059964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890502329231962651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb163461470ec47a02632b8bc8ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3890502329232059965
 Transform:
   m_ObjectHideFlags: 0
@@ -20376,6 +20432,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3890502329232059961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3890502329232059966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890502329231962653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb163461470ec47a02632b8bc8ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3890502329232059967
 Transform:
   m_ObjectHideFlags: 0
@@ -21432,6 +21500,18 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.041089114, y: -0.0055377223, z: 0.00002605468}
     m_Extent: {x: 0.12938005, y: 0.07858771, z: 0.15026784}
   m_DirtyAABB: 0
+--- !u!114 &4730112408841475549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515606481107412440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb163461470ec47a02632b8bc8ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4767144955217773146
 GameObject:
   m_ObjectHideFlags: 0
@@ -24795,6 +24875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6501099763643333661}
   - component: {fileID: 421695914342374415}
+  - component: {fileID: 8781208299601965050}
   m_Layer: 0
   m_Name: monster_bear01_head
   m_TagString: Untagged
@@ -24802,6 +24883,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8781208299601965050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781208299601965049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb163461470ec47a02632b8bc8ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8810750043504377404
 Transform:
   m_ObjectHideFlags: 0
