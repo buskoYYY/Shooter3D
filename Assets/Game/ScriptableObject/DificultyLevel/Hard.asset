@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a5ce748aad7374f84ebb8595b18d6c, type: 3}
   m_Name: Hard
   m_EditorClassIdentifier: 
-  _enemyHealth: 200
-  _enemySpeed: 5.5
+  _enemyHealth: 15
+  _enemySpeed: 4.5
